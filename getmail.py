@@ -9,7 +9,7 @@ SERVER = 'poczta.o2.pl'
 
 if not os.path.exists(EMAIL):
     os.mkdir(EMAIL)
-os.chdir(EMAIL)
+    os.chdir(EMAIL)
 
 # Inicjowanie połączenia z serwerem IMAP
 mail = imaplib.IMAP4_SSL(SERVER)
